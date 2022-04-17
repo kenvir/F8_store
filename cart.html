@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <div class="cart-page">
+        <header class="headers">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng f8-shop
+    
+                            <!-- Header QR Code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/google_play.png" alt="Google Play" class="header__qr-dowload-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-dowload-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-notify ">
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon far fa-bell"></i> Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
+                                                <span class="header__notify-descriotion">HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://afamilycdn.com/2018/11/6/photo-2-15415192732971346836015.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tã quần Pampers</span>
+                                                <span class="header__notify-descriotion">Tã quần Pampers mỏng, nhẹ, thoáng mát</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/2621f0d628aa0e46fcde9e5eaf7f8a37" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Túi xách nữ cao cấp</span>
+                                                <span class="header__notify-descriotion">Chất da dày và mềm- kiểu dáng sang trọng, độc đáo</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn"> Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i> Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            <a href="./signup.html" class="login-signup">Đăng ký</a> 
+                            </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <a href="./login.html" class="login-signup">Đăng nhập</a> 
+                        </li>                      
+                        <!-- <li class="header__navbar-item header__navbar-user">
+                            <img src="https://lh3.googleusercontent.com/a-/AOh14GgQm9TCOuMEkzNpPFtEurX5vfCGbscAIPpA6QTFJQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Nguyễn Việt</span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li> -->
+    
+                    </ul>
+                </nav>
+    
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <label for="mobile-serach-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+    
+                    <div class="header__logo hide-on-tablet">
+                        <a href="/" class="header__logo-link">class="header__logo-img"
+                            <img src="./assets/img/logo.png" class="header__logo-img" alt="">
+                        </a>
+                    </div>
+    
+                    <input type="checkbox" hidden id="mobile-serach-checkbox" class="header__search-checkbox">
+    
+                    <div class="header__search ">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            <!-- Search History -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Đăc nhân tâm</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Nhà giả kim</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Tư duy như Leonardo Da Vinci</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+    
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+    
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+    
+                            <!-- No cart:header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+    
+                                <h4 class="header__cart-headding">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                    <li class="header__cart-item">
+                                        <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">190.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                        Phân loại: Sách tư duy
+                                                    </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">190.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                        Phân loại: Sách tư duy
+                                                    </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">190.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                        Phân loại: Sách tư duy
+                                                    </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">190.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                        Phân loại: Sách tư duy
+                                                    </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">190.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                        Phân loại: Sách tư duy
+                                                    </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img height="50"; width="50" src="https://salt.tikicdn.com/cache/83x83/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">190.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                        Phân loại: Sách tư duy
+                                                    </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+    
+                                <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item-active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="trolley">
+                <div class="trolley__main">
+                    <div class="cart">
+                        <div class="cart__inner col l-6 m-6 c-12">
+                            <div class="cart-inner__products">
+                                <h2 class="cart-inner__products--title">Giỏ hàng
+                                    <span class="cart-inner__products--count">
+                                        ( 1 sản phẩm )
+                                    </span>
+                                </h2>
+                                <div class="cart-inner__products--main ">
+                                    <div class="cart-inner__products--group">
+                                        <a href="#" target="_blank" class="cart-inner__products--group-name">
+                                            <span>ETS Books</span>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="20" color="#787878" height="20" width="20"
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                style="color: rgb(120, 120, 120);">
+                                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                            </svg>
+                                        </a>
+                                        <ul class="cart-products__products">
+                                            <li class="cart-products__product">
+                                                <div class="cart-products__inner">
+                                                    <div class="cart-products__img">
+                                                        <a href="/product-p74325908.html?spid=74325910">
+                                                            <img height="130" width="130" src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci ">
+                                                        </a>
+                                                    </div>
+                                                    <div class="cart-products__content">
+                                                        <div class="cart-products__content--inner">
+                                                            <div class="cart-products__desc">
+                                                                <a class="cart-products__name" href="/product-p74325908.html?spid=74325910">
+                                                                    Tư Duy Như Leonardo Da Vinci
+                                                                </a>
+                                                                <p class="cart-products__badge"></p>
+                                                                <p class="cart-products__author">
+                                                                    <span> - Tác giả: </span>
+                                                                    <a style="text-decoration: none;" href="/author/michael-j-gelb.html">Michael J. Gelb</a>
+                                                                </p>
+                                                                <span class="cart-products__bookcare">Sách có thể bọc bằng 
+                                                                    <a style="text-decoration: none;" href="/bookcare">BookCare</a>
+                                                                </span>
+                                                                <p class="cart-products__actions">
+                                                                    <span class="cart-products__del">Xóa</span>
+                                                                    <span class="cart-products__buy-later">Để dành mua sau</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="cart-products__details">
+                                                                <div class="cart-products__pricess">
+                                                                    <p class="cart-products__real-prices">190.000đ</p>
+                                                                    <p class="cart-products__discount-prices">
+                                                                        <del>290.000đ</del>
+                                                                        <span class="cart-products__percent-prices">-34%</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="cart-products__qty">
+                                                                    <div class="CartQty__StyledCartQty quantites">
+                                                                        <span class="qty-decrease qty-disable">-</span>
+                                                                        <input type="tel" class="qty-input" value="1">
+                                                                        <span class="qty-increase qty-disable">+</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <ul class="cart-products__gift-items">
+                                                    </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="styles__StyledSellerDiscount sales">
+                                            <div class="wrapper">
+                                                <div class="description">Mã Khuyến Mãi</div>
+                                                <div class="small-coupon-list">
+                                                    <div class="styles__StyledSmallCoupon voucher">
+                                                        <div class="inner">
+                                                            <i class="semicircle left"></i>
+                                                            <i class="semicircle right"></i>
+                                                            <div class="content">ĐÃ GIẢM 9.500Đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="more" color="#787878" size="20" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(120, 120, 120);">
+                                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <div class="cart-total__inner">
+                                <div class="inner-infor">
+                                    <p class="heading">
+                                        <span class="text">Địa chỉ nhận hàng</span>
+                                        <a href="#" class="link">Thay đổi</a>
+                                    </p>
+                                    <p class="title">
+                                        <b class="name">Nguyễn Việt</b>
+                                        <b class="phone">0346751314</b>
+                                    </p>
+                                    <p class="address">An Hộ, Quang Trung, Tứ Kỳ, Hải Dương</p>
+                                </div>
+                                <div class="inner-extra">
+                                    <div class="title-usage">
+                                        <p class="coupon-title">F8-book khuyến mãi</p>
+                                        <p class="max-usage">
+                                            Có thể chọn 2
+                                            <img class="max-usage__info" src="https://frontend.tikicdn.com/_desktop-next/static/img/mycoupon/icons-info-gray.svg" alt="info">
+                                        </p>
+                                    </div>
+                                    <div class="eligible_coupon_list"></div>
+                                    <div class="show-more">
+                                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/mycoupon/coupon_icon.svg">
+                                        <span>Chọn hoặc nhập khuyến mãi</span>
+                                    </div>
+                                </div>
+                                <div class="inner-settleup">
+                                    <div class="prices">
+                                        <ul class="prices__items">
+                                            <li class="prices__item">
+                                                <span class="prices__text">Tạm tính</span>
+                                                <span class="prices__value">190.000đ</span>
+                                            </li>
+                                            <li class="prices__item">
+                                                <span class="prices__text">Giảm giá</span>
+                                                <span class="prices__value">-9.500đ</span>
+                                            </li>
+                                        </ul>
+                                        <p class="prices__total">
+                                            <span class="prices__text">Thành tiền</span>
+                                            <span class="prices__value prices__value--final">180.500đ
+                                                <i>(Đã bao gồm VAT nếu có)</i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button type="button" class="cart__submit" disabled="">Tiến hành đặt hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m-2-4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">F8-Shop Mal</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới Thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều Khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sách trong nước</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sách nước ngoài</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Lưu niệm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-linkedin"></i> Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 c-12">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__dowload">
+                            <img src="/assets/img/qr_code.png" alt="Dowload QR" class="footer__dowload-qr">
+                            <div class="footer__dowload-apps">
+                                <a href="" class="footer__dowload-app-link">
+                                    <img src="/assets/img/google_play.png" alt="Google play" class="footer__dowload-app-img">
+                                </a>
+                                <a href="" class="footer__dowload-app-link">
+                                    <img src="/assets/img/app_store.png" alt="App store" class="footer__dowload-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">Công ty sách bách hoá F8 - OFF </p>
+
+                    <p class="footer__text">Chi nhánh: 63 Lê Văn Lương, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

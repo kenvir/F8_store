@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="headers">
+        <div class="grid wide">
+            <nav class="header__navbar hide-on-mobile-tablet">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                        Vào cửa hàng trên ứng dụng f8-shop
+
+                        <!-- Header QR Code -->
+                        <div class="header__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/google_play.png" alt="Google Play" class="header__qr-dowload-img">
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-dowload-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Kết nối</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item-has-notify ">
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon far fa-bell"></i> Thông báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
+                                            <span class="header__notify-descriotion">HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://afamilycdn.com/2018/11/6/photo-2-15415192732971346836015.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Tã quần Pampers</span>
+                                            <span class="header__notify-descriotion">Tã quần Pampers mỏng, nhẹ, thoáng mát</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://cf.shopee.vn/file/2621f0d628aa0e46fcde9e5eaf7f8a37" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Túi xách nữ cao cấp</span>
+                                            <span class="header__notify-descriotion">Chất da dày và mềm- kiểu dáng sang trọng, độc đáo</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn"> Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon far fa-question-circle"></i> Trợ giúp
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                        <a href="./signup.html" class="login-signup">Đăng ký</a> 
+                        </li>
+                    <li class="header__navbar-item header__navbar-item--strong">
+                        <a href="./login.html" class="login-signup">Đăng nhập</a> 
+                    </li>                      
+                    <!-- <li class="header__navbar-item header__navbar-user">
+                        <img src="https://lh3.googleusercontent.com/a-/AOh14GgQm9TCOuMEkzNpPFtEurX5vfCGbscAIPpA6QTFJQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Nguyễn Việt</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="">Đơn mua</a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                </ul>
+            </nav>
+
+            <!-- Header with search -->
+            <div class="header-with-search">
+                <label for="mobile-serach-checkbox" class="header__mobile-search">
+                    <i class="header__mobile-search-icon fas fa-search"></i>
+                </label>
+
+                <div class="header__logo hide-on-tablet">
+                    <a href="/" class="header__logo-link">class="header__logo-img"
+                        <img src="./assets/img/logo.png" class="header__logo-img" alt="">
+                    </a>
+                </div>
+
+                <input type="checkbox" hidden id="mobile-serach-checkbox" class="header__search-checkbox">
+
+                <div class="header__search ">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                        <!-- Search History -->
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Đăc nhân tâm</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Nhà giả kim</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Tư duy như Leonardo Da Vinci</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-select">
+                        <span class="header__search-select-label">Trong Shop</span>
+                        <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                        <ul class="header__search-option">
+                            <li class="header__search-option-item header__search-option-item--active">
+                                <span>Trong Shop</span>
+                                <i class="fas fa-check"></i>
+                            </li>
+                            <li class="header__search-option-item">
+                                <span>Ngoài Shop</span>
+                                <i class="fas fa-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Cart layout -->
+                <div class="header__cart">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <span class="header__cart-notice">3</span>
+
+                        <!-- No cart:header__cart-list--no-cart -->
+                        <div class="header__cart-list ">
+                            <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                            <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                            <h4 class="header__cart-headding">Sản phẩm đã thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <!-- Cart item -->
+                                <li class="header__cart-item">
+                                    <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                    Phân loại: Sách tư duy
+                                                </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                    Phân loại: Sách tư duy
+                                                </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                    Phân loại: Sách tư duy
+                                                </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                    Phân loại: Sách tư duy
+                                                </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img height="50"; width="50"  src="https://salt.tikicdn.com/cache/200x200/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                    Phân loại: Sách tư duy
+                                                </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img height="50"; width="50" src="https://salt.tikicdn.com/cache/83x83/ts/product/60/f2/d9/d4ac9df861d3e019ac39cb575f4964ea.jpg" alt="Tư Duy Như Leonardo Da Vinci">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tư duy như Leonardo Da Vinci</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">190.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                    Phân loại: Sách tư duy
+                                                </span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a href="./cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="header__sort-bar">
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Liên quan</a>
+            </li>
+            <li class="header__sort-item header__sort-item-active">
+                <a href="" class="header__sort-link">Mới nhất</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Bán chạy</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Giá</a>
+            </li>
+        </ul>
+    </header>
+    <div class="page-product">
+        <div class="tracking-impression-placeholder" 
+            style="position: fixed; z-index: 99999; bottom: 0px; left: 0px;">
+        </div>
+        <div class="container">
+            <div class="indexstyle__StyledSeperate-qd1z2k-0 llsmxc ">
+                <div class="product__home"></div>
+                <div class="container__img col l-4 m-12 c-12">
+                    <div class="container__img-groups">
+                        <div class="container__img-main">
+                            <div class="img__main-lens">
+                                <div class="img__main-lens--con">
+                                    <div style="width: 444px; height: 444px; z-index: 0;">
+                                        <div class="img__main">
+                                            <img class="images" src="https://salt.tikicdn.com/cache/w444/ts/product/63/a9/60/cf2342c6471f1bb37245fcad37f5a21b.jpg" 
+                                                 alt="TƯ DUY NHƯ LEONARDO DA VINCI">
+                                        </div>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img__badges"></div>
+                    </div>                
+                    <div class="review__img">
+                        <div class="review__img-list hide-on-mobile">
+                            <a class="active">
+                                <div>
+                                    <div class="img__review-act">
+                                        <img src="https://salt.tikicdn.com/cache/w444/ts/product/63/a9/60/cf2342c6471f1bb37245fcad37f5a21b.jpg" alt="product-img-0"
+                                        class="review__active">
+                                    </div>
+                                </div>
+                            </a>
+                            <a  class="">
+                                <div>
+                                    <div class="img__review-act">
+                                        <img src="https://salt.tikicdn.com/cache/w64/ts/product/61/13/c0/aab7f2e5c02350e7ee3e5394c0b8b480.jpg" alt="product-img-1" 
+                                        class="review__active">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="indexstyle__StyledSeperate "></div>
+                <div class="indexstyle__ProductContent col l-8 m-12 c-12 ">
+                    <div class="header">
+                        <div class="brand">
+                            <span class="brand-and-author no-after">
+                                <h6>Tác giả:&nbsp;<a data-view-id="pdp_details_view_author" data-view-index="0" href="/author/gene-kim.html">Michael J. Gelb</a>
+                                </h6>
+                            </span>
+                            <div class="style__StyledProductAction infor ">
+                                <div class="icon-wrap">
+                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-like.svg">
+                                </div>
+                                <div class="icon-wrap shareFB" data-view-id="pdp_details_share">
+                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-account-social.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="title">TƯ DUY NHƯ LEONARDO DA VINCI</h1>
+                        <div class="below-title">
+                            <div data-view-id="pdp_quantity_sold" style="display: none;"></div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="summary">
+                            <div class="left">
+                                <div class="price-and-icon ">
+                                    <div class="style__StyledProductPrice price">
+                                        <div class="product-price">
+                                            <span class="product-price__current-price">190.000 ₫</span>
+                                            <span class="product-price__list-price">290.000 ₫</span>
+                                            <span class="product-price__discount-rate">-65%</span>
+                                        </div>
+                                    </div>
+                                    <div class="style-sc-11ucdwk-0 sales">
+                                        <div class="item">
+                                            <!-- <img class="icon" src="https://salt.tikicdn.com/ts/upload/7b/17/f7/4860983e93ea3c264ae0d932c58ec4f7.png" alt="f8card" width="48" height="24"> -->
+                                            <span style="font-size: 14px;">Hoàn tiền 15% tối đa 600k/tháng</span>
+                                            <img class="view-more" src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/question.svg">
+                                            <a data-view-index="0" data-view-id="pdp_minor_badge" data-view-label="Hoàn tiền 15% tối đa 600k/tháng" class="view-more-link" href="https://tiki.vn/chuong-trinh/mo-the-tikicard?src=pdp_badge" target="_blank">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="styles__ProductOptionsWrapper cDduAu"></div>
+                                <div class="style__StyledDeliveryZone address delivery-zone"> 
+                                    <div class="delivery-zone__heading">
+                                        <div>
+                                            <span style="font-size: 14px;">Giao đến </span>
+                                            <span class="address-defaul">Q. Hoàng Mai, P. Hoàng Văn Thụ, Hà Nội</span> - 
+                                            <span class="address-change">ĐỔI ĐỊA CHỈ</span>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-zone__inner">
+                                        <div class="style__StyledShippingInfo ship shipping-info ">
+                                            <div class="shipping-info__inner disable-srcoll">
+                                                <div class="shipping-info__item only-item">
+                                                    <div class="shipping-info__heading">
+                                                        <div class="shipping-info__heading-text">Giao tiêu chuẩn</div>
+                                                    </div>
+                                                        <div class="shipping-info__highlight">Thứ 5, ngày 20 tháng 05</div>
+                                                        <span>
+                                                        <span class="shipping-info__fee-label">Vận chuyển:</span>
+                                                        <span class="shipping-info__fee ">14.000 ₫</span><br>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="indexstyle__AddToCart-qd1z2k-8 quantity add-to-cart">
+                                    <div class="qty-and-message">
+                                        <div class="QualityInput__Wrapper-sc-15mlmyf-0 qaty">
+                                            <p class="label">Số Lượng</p>
+                                            <div class="group-input">
+                                                <button class="disable">
+                                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-remove.svg">
+                                                </button>
+                                                <input type="text" class="input" value="1">
+                                                <button>
+                                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-add.svg">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group-button">
+                                        <button class="btn btn-add-to-cart" >
+                                            Chọn mua
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="style__StyledCurrentSeller information">
+                                    <div class="style__StyledSellerWidget infor__main ">
+                                        <div class="seller-info">
+                                            <a class="overview" href="https://tiki.vn/cua-hang/minhhabooks">
+                                                <div class="logo" style="width: 44px;">
+                                                    <div class="PictureV2__StyledWrapImage img__review-act">
+                                                        <img src="https://vcdn.tikicdn.com/cache/w88/ts/seller/90/e2/81/710a7373c42be1565897d82ccbc00579.png" 
+                                                        alt="" class="PictureV2__StyledImage review__active">
+                                                    </div>
+                                                </div>
+                                                <div class="overview-right center-item">
+                                                    <span class="seller-name">
+                                                        <span>Minhhabooks</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="seller-detail">
+                                            <div class="item review">
+                                                <div class="title">
+                                                    <span>4.7 / 5.0</span>
+                                                        <i class="icomoon icomoon-star"></i>
+                                                </div>
+                                                <div class="sub-title">885</div>
+                                            </div>
+                                            <div class="border-left"></div>
+                                            <div class="item normal">
+                                                <div class="title">
+                                                    <span>228</span>
+                                                </div>
+                                                <div class="sub-title">Theo dõi</div>
+                                            </div>
+                                        </div>    
+                                        <div class="seller-action ">
+                                            <a class="action" href="https://tiki.vn/cua-hang/minhhabooks">
+                                                <img src="https://salt.tikicdn.com/ts/upload/49/27/ff/d735c33edfdc6cf6aeb6e183bec28869.png">
+                                                <span>Xem Shop</span>
+                                            </a>
+                                            <div data-view-id="pdp_store_seller.follow" data-view-label="10984" class="action follow">
+                                                <img src="https://salt.tikicdn.com/ts/upload/5b/bf/3c/eeda00767e26b5873030e44f951441c4.png">
+                                                <span>Theo Dõi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="style__StyledCustomerBenefits-sc-4w35vj-0 check">
+                                        <div class="benefit-item compensation">
+                                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/compensation.svg">
+                                            <span>Hoàn tiền<br>
+                                                <b>111%</b>
+                                                <br>
+                                                <a style="color:#242424; text-decoration: underline;" 
+                                                href="https://drive.google.com/file/d/1po3r6qApp-q7JDB5kwGKujVtvInfO-ih/view" target="_blank">nếu giả</a>
+                                            </span>
+                                        </div>
+                                        <div class="benefit-item guarantee">
+                                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/guarantee.svg">
+                                            <span> Mở hộp<br>kiểm tra<br>nhận hàng </span>
+                                        </div>
+                                        <div class="benefit-item refund">
+                                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/refund.svg">
+                                            <span>Đổi trả trong<br><b>30 ngày</b><br>nếu sp lỗi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="styles__Container liken">
+                                    <div class="styles__Left conpare">
+                                        <div class="styles__Count storefront">1 Nhà Bán Khác</div>
+                                        <div class="styles__LowestPrice prices">Giá từ 183.200 ₫</div>
+                                    </div>
+                                    <a href="/so-sanh-gia/du-an-ky-lan-xay-dung-quy-trinh-lam-viec-va-chien-luoc-phat-trien-cho-moi-doanh-nghiep-p94348618?spid=98163285" 
+                                    class="styles__CompareButtonLink liken-store">So Sánh</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="informations">
+                <div class="left ">
+                    <h4 class="title">Thông tin chi tiết</h4>
+                    <div class="group">
+                        <div class="content has-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Công ty phát hành</td>
+                                        <td>Alphabooks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dịch Giả</td>
+                                        <td>Nhiều dịch giả</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Loại bìa</td>
+                                        <td>Bìa mềm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Số trang</td>
+                                        <td>364</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SKU</td>
+                                        <td>5763439152614</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nhà xuất bản</td>
+                                        <td>Nhà Xuất Bản Lao Động</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <h4 class="title">MÔ TẢ SẢN PHẨM</h4>
+                        <div class="content">
+                            <div class="describe">
+                                <div class="describe-detail">
+                                    <div>
+                                        <p>
+                                            <strong>Tư Duy Như Leonardo Da Vinci (Tái Bản 2018)</strong>
+                                        </p>
+                                        <p>Tư duy như Leonardo da Vinci là cuốn sách kỹ năng giúp bạn có thể khám phá khả năng tiềm ẩn của mình, mài sắc nó và giải phóng trí thông minh bằng cách thực hiện theo những cách mà thiên tài lớn nhất mọi thời đại Leonardo da Vinci đã làm.</p>
+                                        <p>Năng lực tư duy sáng tạo là tốc độ tư duy, khả năng chuyển hóa thông tin thành kiến thức, và từ kiến thức tạo ra giá trị, tạo ra sản phẩm, dịch vụ. Với thế hệ trẻ nói chung và thế hệ trẻ Việt Nam nói riêng, năng lực tư duy sáng tạo đã trở thành một trong những điều kiện cần thiết để đem lại cho họ một côngviệc hứa hẹn, hay xa hơn nữa là một chỗ đứng vững chắc trong xã hội và trên thế giới. Do đó, ngay từ khi còn ngồi trên ghế nhà trường, mỗi người đều đã phải tự chuẩn bị và tạo dựng cho mình năng lực tư duy sáng tạo, coi nó như là hành trang để bước vào đời.</p>
+                                        <p>Leonardo da Vinci (1452 - 1519) là một thiên tài toàn năng người Italia: là họa sĩ, kiến trúc sư, nhà điêu khắc, nhà khảo luận mỹ thuật, thiên tài của nền văn hóa và chủ nghĩa nhân đạo thời Phục hưng, xuất chúng trong mọi hình thái nghệ thuật, hơn nữa, còn là nhạc sĩ, nhà toán học kiêm kỹ sư cơ khí, triết gia, bác sĩ, nhà giải phẫu, người đi đầu trong rất nhiều lĩnh vực phát minh khoa học sau này. Leonardo da Vinci là một thiên tài lớn. Ông có năng lực tư duy sáng tạo vô hạn. Tuy nhiên, thiên tài là do học tập chứ không phải tự nhiên mà có. Loài người đã được trao tặng nhiều tiềm năng vô hạn để học tập và sáng tạo. Bạn có thể khám phá khả năng tiềm ẩn của mình, mài sắc nó và giải phóng trí thông minh bằng cách thực hiện theo những cách mà thiên tài lớn nhất mọi thời đại Leonardo da Vinci đã làm.</p>
+                                        <p>Trong Tư duy như Leonardo da Vinci, thông qua các bản vẽ sáng chế, và các công trình nghệ thuật huyền thoại của Da Vinci, Gelb giới thiệu Bảy nguyên tắc Da Vinci, những yếu tố cốt lõi và quan trọng của thiên tài từ curiosità (trí tò mò), cách tiếp cận trí tò mò vô hạn đến với cuộc sống để connessione (kết nối), sự đánh giá cao cho sự liên kết của tất cả mọi thứ. Da Vinci là nguồn cảm hứng của bạn và bạn sẽ khám phá một cách tư duy hoàn toàn mới. Hãy thực hiện từng bước một thông qua các bài tập và bài học, bạn sẽ khai thác được thế mạnh và những điều kỳ diệu tuyệt vời từ chính bạn, làm chủ cuộc đời và tận dụng khả năng để:</p>
+                                        <p>• Giải quyết vấn đề</p>
+                                        <p>• Tư duy sáng tạo</p>
+                                        <p>• Tự thể hiện bản thân</p>
+                                        <p>• Thưởng thức thế giới xung quanh bạn</p>
+                                        <p>• Thiết lập mục tiêu và cân bằng cuộc sống</p>
+                                        <p>• Bảo đảm hài hòa cơ thể và tâm trí.</p>
+                                        <p>Có thể nói Michael Gelb đã viết một cuốn sách phát triển tư duy sâu sắc nhưng cũng đầy thách thức.Dù bạn không phải là một người chuyên nghiên cứu về Da Vinci, nhưng bạn luôn luôn bị ấn tượng bởi ý tưởng của Da Vinci và đặc biệt là những bản vẽ, bức tranh của Da Vinci. Cuốn sách này giúp bạn tăng kiến thức giống như thiên tài Da Vinci và thôi thúc bạn đọc suy nghĩ như Leonardo với những ý tưởng tuyệt vời. Michael Gelb khuyến khích người đọc đánh giá bản thân đối với mỗi nguyên tắc và sau đó trình bày các bài tập phong phú để nguyên tắc và kỹ năng phát triển nhận thức. Trong quá trình đọc cuốn Tư duy như Leonardo da Vinci bạn sẽ tìm thấy bản thân mình, sử dụng các nguyên tắc mà bạn đã quan sát thế giới xung quanh trong suốt cả ngày, lắng nghe những âm thanh tự nhiên, ngắm những đàn chim bay...để cảm nhận mọi thứ diễn ra. Nguyên tắc cuối cùng của cuốn sách này là Connessione. Nó giống như những cây nho được trồng, qua bàn tay chăm sóc, khối óc và trái tim đã tạo ra rượu vang, đóng gói nó, vận chuyển, phân phối nó và đưa nó đến nhiều người tiêu dùng để thưởng thức.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, ...</p>
+                                    </div>
+                                    <div class="gradient"></div>
+                                </div>
+                                <a class="btn-more">Xem Thêm Nội Dung</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid wide footer__content">
+            <div class="row">
+                <div class="col l-2-4 m-2-4 c-6">
+                    <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">F8-Shop Mal</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-2-4 c-6">
+                    <h3 class="footer__heading">Giới thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới Thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tuyển Dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Điều Khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-2-4 c-6">
+                    <h3 class="footer__heading">Danh mục</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Sách trong nước</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Sách nước ngoài</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Lưu niệm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-2-4 c-6">
+                    <h3 class="footer__heading">Theo dõi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-linkedin"></i> Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-2-4 c-12">
+                    <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                    <div class="footer__dowload">
+                        <img src="/assets/img/qr_code.png" alt="Dowload QR" class="footer__dowload-qr">
+                        <div class="footer__dowload-apps">
+                            <a href="" class="footer__dowload-app-link">
+                                <img src="/assets/img/google_play.png" alt="Google play" class="footer__dowload-app-img">
+                            </a>
+                            <a href="" class="footer__dowload-app-link">
+                                <img src="/assets/img/app_store.png" alt="App store" class="footer__dowload-app-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <p class="footer__text">Công ty sách bách hoá F8 - OFF </p>
+
+                <p class="footer__text">Chi nhánh: 63 Lê Văn Lương, Trung Hòa, Cầu Giấy, Hà Nội</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
